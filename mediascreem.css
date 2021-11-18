@@ -2,6 +2,10 @@
  .rigth{
   margin :0;
   padding:2px;
+  
+  .btn_soy{
+   position:relative;
+   left: 0;
 }
 
 
