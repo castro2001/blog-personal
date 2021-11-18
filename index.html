@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"  content="ejemplos de creacion de blog personal hmtl css js" >
+    <title>Blog Personal de Alexander Castro</title>
+    <!-- ICONO DEL NAVEGADOR -->
+    <link rel="shortcut icon" href="webp/ale.webp" type="image/x-icon">
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediascreem.css">
+</head>
+<body>
+    <!-- seccion de navegacion -->
+    <nav class="nav" id="navbar">
+        <h1 class="logo">Alexander Castro</h1>
+        <ul class="toogle">
+            <li>
+                <a href="index.html" class="nav_item">inicio</a>
+            </li>
+            <li>
+                <a href="#quien soy" class="nav_item">¿Quien Soy?</a>
+            </li>
+            <li>
+                <a href="#proyectos" class="nav_item">Proyectos</a>
+            </li>
+        </ul>
+        <span class="menuIcon" onclick="toggleMenu();"></span>
+    </nav>
+<!-- QUIEN SOY -->
+<section class="soy" id="quien soy">
+    <div class="img">
+        <img src="webp/desarrollador.svg" alt="desarrollador web" >
+    </div>
+    <div class="rigth">
+        <h2 class="title_soy">
+            ¿quien soy?
+        </h2>
+        <p class="p_soy">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem aut accusamus officiis nesciunt natus rerum nihil animi iste voluptatibus harum.  <a href="#" class="btn btn_soy">Leer mas</a></p>
+       
+    </div>
+</section>
+<!-- SECCION FILOSOFIA -->
+<section class="filosofia">
+    <img src="webp/avatar.png " alt="ale" class="img__filo">
+    <div class="sofia">
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat illo delectus quam excepturi veniam unde repellendus consequatur suscipit dolore natus Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi earum ratione culpa perspiciatis animi dolores..</p>
+
+        <p class="cite">Alexander Castro</p>
+    </div>
+
+</section>
+<!-- SECCION DE MIS PROYECTOS  row son usamos grid -->
+<div class="title__proyect" id="proyectos">
+    <h3 >Mis proyectos</h3>
+</div>
+<div class="proyectos" >
+        <article class="card">
+            <img src="webp/login.png" alt="login usuario y registro usuario" >
+            <h4>Sistema Usuario</h4>
+                <p>usando html para la estructura , bootstrap para el diseño y php </p>           
+                 <a href="http://localhost/Login%20Usuario%20PHP/" target="_blank" class="btn btn__pro">ver proyecto</a>
+        </article>
+ 
+        <article class="card">
+            <img src="webp/musica.png" alt="pagina web con musica para reproducir" >
+            <h4> Reproduccion Musica</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic maiores dolore nihil sequi expedita, nulla esse, dignissimos iste distinctio sapiente voluptate, accusamus pariatur velit asperiores ullam architecto impedit omnis. ?</p>        
+                 <a href="http://localhost/musica/#" target="_blank" class="btn btn__pro">ver proyecto</a>
+        </article>
+
+        <article class="card">
+            <img src="webp/subir y descargar.png" alt="subir y descargar de archivo" >
+            <h4>Subir y descargar de archivo</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic maiores dolore nihil sequi expedita, nulla esse, dignissimos iste distinctio sapiente voluptate, accusamus pariatur velit asperiores ullam architecto impedit omnis. ?</p>            
+                 <a href="http://localhost/subir-y-descargar-archivos-php/" target="_blank" class="btn btn__pro">ver proyecto</a>
+        </article>
+
+        <article class="card">
+            <img src="webp/pagina viaje.png" alt="Pagina de Viaje" >
+            <h4>Pagina de Viaje</h4>
+            <p>usado con html css y js</p>           
+                 <a href="http://localhost/pagina/"  target="_blank" class="btn btn__pro">ver proyecto</a>
+        </article>
+
+        <article class="card">
+            <img src="webp/sitio web.png" alt="Sitio Web" >
+            <h4>Sitio Web </h4>
+            <p>Creado con hmtl bootsrap ,Mysql ,Php usando un sgbd phpMyAdmin</p>           
+                 <a href="http://localhost/sitio%20web/" target="_blank" class="btn btn__pro">ver proyecto</a>
+        </article>
+   
+   
+</div>
+<!-- PIE DE PAGINA -->
+<footer class="footer">
+    <p>copyrigth &copy 2021. Todos los derechos reservados </p>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
