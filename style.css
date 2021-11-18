@@ -1,0 +1,208 @@
+/* fuentes de texto */
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* font-family: 'Lora', serif; parrafos
+font-family: 'Roboto', sans-serif;titulos */
+
+/* navegacion */
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #00283D;
+    width: 100%;
+    height: 50px;
+    /* position:fixed; */
+}
+.logo{
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;  
+    padding: 10px;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+    right: -100px;
+    padding: 10px;
+}
+.nav_item{
+    color: #fff;
+    font-family: 'Lora', serif;
+    text-transform: capitalize;
+}
+/* seccion quien soy     grid-template-columns: repeat(auto-fit , minmax(200px ,1fr));
+ */
+.soy{
+    display: grid;
+     grid-template-columns:repeat(2,1fr);
+    height: 60vh;
+}
+.img{
+    position: relative;
+    width: 200px;
+    left: 130px;
+}
+img{
+    width: auto;
+    height: auto;
+}
+.rigth{
+    position: relative;
+    top: 90px;
+    right: 100px;  
+    margin: 0 100px;
+}
+.title_soy{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5em;
+    font-weight: 200;
+    text-align: center;
+    color: #f34;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.p_soy{
+    font-family: 'Lora', serif;
+    text-align: justify;
+    font-size: 20px;
+   
+}
+.btn{
+    color: #FCF;
+    background-color: #DC2F02;
+    border-radius: 20px 20px;
+}
+.btn_soy{
+    position: relative;
+    bottom: -50px;
+    right: 50px;
+    padding: 10px 20px;
+    width: 150px;
+}
+/* seccion filosofia */
+.filosofia{
+    background-color: #BB3311;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     width: 100%;
+    height: 80vh;
+}
+.img__filo{
+    border-radius: 50% 50% /50% 50%;
+    width: 230px;
+    height: 250px;
+    position: relative;
+    bottom: 50px;
+    right: -710px;
+}
+.sofia{
+    text-align: justify;
+    font-size: 2em;
+    font-family: 'Lora', serif;
+    margin: 0 50px;
+    padding: 5px 50px;
+    color: #FCF;
+}
+.cite{
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+/* seccion Proyectos */
+.proyectos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
+    padding: 50px 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2em;
+}
+
+.title__proyect{
+    text-align: center;
+    font-size: 2em;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
+    font-weight: 700;
+    color: #f34;
+}
+.card{
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    height:500px ;
+    box-shadow: 0 0 6px rgba(0, 0,0, .5);
+    border-radius: 1em;    
+}
+.card img{
+    object-fit: cover;
+    object-position: initial;
+    border-radius: 1em ;
+    border: 2px solid transparent;
+}
+
+.card h4{
+    text-align: center;
+    margin: 15px auto;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #121;
+}
+
+.card p{
+    margin-top: 0;
+    margin-bottom: 2em;
+    margin: 0 25px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.btn__pro{
+    position: relative;
+    left: 100px;
+    bottom: -10px;
+    padding: 10px 15px;
+    width: 120px;
+    text-align: center;
+    font-size: 15px;
+    text-transform: capitalize; 
+}
+/* pie de pagina */
+.footer{
+    background-color: #293241;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p{
+    color: #FFFCCC;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+@media screen and (max-width: 1200px) {
+  .img__filo{
+      position: absolute;
+      left: 520px;
+      bottom: -20px;
+  }
+    .sofia{
+        position: absolute;
+        left: 20px;
+
+        bottom: -300px;
+    }
+}
